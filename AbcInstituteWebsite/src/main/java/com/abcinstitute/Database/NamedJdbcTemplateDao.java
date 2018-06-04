@@ -1,4 +1,4 @@
-package com.abcinstitute.Database;
+/*package com.abcinstitute.Database;
 
 
 import java.io.File;
@@ -314,10 +314,10 @@ public void addSubject (int userId, Subject subject) {
 	}
 	 if(checkRole(userId).equals("ROLE_STUDENT")) createInvoice(userId,subject);
 }
-/**
+*//**
  * @param userId
  * @param subjectCode
- */
+ *//*
 private int createInvoice(int userId, Subject subject) {
 	String sql="insert into invoice(SubjectEnrolled,userId,cost) values (:id,:user,:cost)";
 	SqlParameterSource nameParameters=new MapSqlParameterSource("id",subject.getSubjectType()).addValue("user", userId)
@@ -430,9 +430,9 @@ public Resource getResource(int id){
 
 
 
-/**
+*//**
  * @return
- */
+ *//*
 //to generate subjectLists
 public List<Subject> generateUnassignedSubjectList(){
 	 List<Subject> list = new ArrayList<Subject>();
@@ -451,3 +451,4 @@ private List< Map<String, Object>> generateUnassignedSubjects(){
 	return this.getJdbcTemplate().queryForList(sql);
 }
 }
+*/
