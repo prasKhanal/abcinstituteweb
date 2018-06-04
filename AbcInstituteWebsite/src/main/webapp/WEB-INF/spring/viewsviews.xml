@@ -1,0 +1,162 @@
+<!DOCTYPE tiles-definitions PUBLIC
+      "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN"
+      "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+      <!-- TITLE DESCRIPTION OF TEMPLATE -->
+      <tiles-definitions>
+      <definition name="template"
+               template="/WEB-INF/views/Templates/template.jsp">
+     <put-attribute name="description"
+                    value="/WEB-INF/views/Templates/tiles/description.jsp" />
+    <put-attribute name="footer"
+                    value="/WEB-INF/views/Templates/tiles/footer.jsp" />
+    <put-attribute name="greeting"
+                    value="/WEB-INF/views/Templates/tiles/greeting.jsp" />
+    <put-attribute name="header"
+                    value="/WEB-INF/views/Templates/tiles/header.jsp" />  
+    <put-attribute name="sidebar1"
+                    value="/WEB-INF/views/Templates/tiles/sidebar1.jsp" />                                                 
+      </definition>
+      
+       <!-- TITLE DESCRIPTION OF TEMPLATE FOR STATIC PAGE -->
+       <definition name="templateStatic"
+               template="/WEB-INF/views/Templates/templateStatic.jsp">
+    <put-attribute name="footer"
+                    value="/WEB-INF/views/Templates/tiles/footer.jsp" />
+    <put-attribute name="header"
+                    value="/WEB-INF/views/Templates/tiles/header.jsp" />  
+    <put-attribute name="sidebar1"
+                    value="/WEB-INF/views/Templates/tiles/sidebar1.jsp" />                                                 
+      </definition>
+      <!-- TITLE DEFINATION FOR STATIC PAGES -->
+      <definition name="welcomeHome" extends="templateStatic">
+        <put-attribute name="body" value="/WEB-INF/views/jsp/static/welcomeHome.jsp"/>
+    </definition>
+    <definition name="courseDetail" extends="templateStatic">
+        <put-attribute name="body" value="/WEB-INF/views/jsp/static/courseDetail.jsp"/>
+    </definition>
+    <definition name="aboutus" extends="templateStatic">
+        <put-attribute name="body" value="/WEB-INF/views/jsp/static/aboutus.jsp"/>
+    </definition>
+    <definition name="contactUs" extends="templateStatic">
+        <put-attribute name="body" value="/WEB-INF/views/jsp/static/contactUs.jsp"/>
+    </definition>
+      <definition name="contactUs" extends="templateStatic">
+        <put-attribute name="body" value="/WEB-INF/views/jsp/static/contactUs.jsp"/>
+    </definition>
+     <definition name="home" extends="templateStatic">
+        <put-attribute name="body" value="/WEB-INF/views/jsp/static/home.jsp"/>
+    </definition>
+    
+    
+      
+      <!-- TITLE DEFINATION FOR WELCOME PAGE -->
+      <definition name="Welcome" extends="template">
+        <put-attribute name="body" value="/WEB-INF/views/jsp/Welcome.jsp"/>
+    </definition>
+     
+     
+     <!-- TITLE DEFINATION FOR REGISTERUSER PAGES -->
+      <definition name="RegisterUser" extends="template">
+        <put-attribute name="body" value="/WEB-INF/views/jsp/registerUser/RegisterUser.jsp"/>
+    </definition>
+    <definition name="RegisterConfirm" extends="template">
+        <put-attribute name="body" value="/WEB-INF/views/jsp/registerUser/RegisterConfirm.jsp"/>
+    </definition>
+    <definition name="crediantialPage" extends="template">
+        <put-attribute name="body" value="/WEB-INF/views/jsp/registerUser/crediantialPage.jsp"/>
+    </definition>
+    
+    <!-- TITLE DEFINATION FOR EDIT DETAIL PAGES -->
+     <definition name="EditUserDetail" extends="template">
+        <put-attribute name="body" value="/WEB-INF/views/jsp/editUserDetail/EditUserDetail.jsp"/>
+    </definition>
+    <definition name="EditUserDetailChanged" extends="template">
+        <put-attribute name="body" value="/WEB-INF/views/jsp/editUserDetail/EditUserDetailChanged.jsp"/>
+    </definition>
+    <definition name="EditUserDetailConfirm" extends="template">
+        <put-attribute name="body" value="/WEB-INF/views/jsp/editUserDetail/EditUserDetailConfirm.jsp"/>
+    </definition>
+    <definition name="changePassword" extends="template">
+        <put-attribute name="body" value="/WEB-INF/views/jsp/editUserDetail/changePassword.jsp"/>
+    </definition>
+    <!-- TITLE DEFINATION FOR PAYMENTS PAGES WITH RECEPT AND INVOICE GENERATOR PAGES -->
+    <definition name="listReceipt" extends="template">
+        <put-attribute name="body" value="/WEB-INF/views/jsp/payment/listReceipt.jsp"/>
+    </definition><definition name="payComit" extends="template">
+        <put-attribute name="body" value="/WEB-INF/views/jsp/payment/payComit.jsp"/>
+    </definition><definition name="payConfirm" extends="template">
+        <put-attribute name="body" value="/WEB-INF/views/jsp/payment/payConfirm.jsp"/>
+    </definition><definition name="payFee" extends="template">
+        <put-attribute name="body" value="/WEB-INF/views/jsp/payment/payFee.jsp"/>
+    </definition><definition name="receiptGenerate" extends="template">
+        <put-attribute name="body" value="/WEB-INF/views/jsp/payment/receiptGenerate.jsp"/>
+    </definition><definition name="receiptList" extends="template">
+        <put-attribute name="body" value="/WEB-INF/views/jsp/payment/receiptList.jsp"/>
+    </definition>
+    <!-- TITLE DEFINATION FOR SUBJECT CONTROLLER PAGES -->
+       <definition name="addSubject" extends="template">
+        <put-attribute name="body" value="/WEB-INF/views/jsp/subject/addSubject.jsp"/>
+        </definition>
+        <definition name="addSubjectConfirm" extends="template">
+        <put-attribute name="body" value="/WEB-INF/views/jsp/subject/addSubjectConfirm.jsp"/>
+        </definition>
+        <definition name="newSubject" extends="template">
+        <put-attribute name="body" value="/WEB-INF/views/jsp/subject/newSubject.jsp"/>
+        </definition>
+        <definition name="editSubjectDescription" extends="template">
+        <put-attribute name="body" value="/WEB-INF/views/jsp/subject/editSubjectDescription.jsp"/></definition>
+        <definition name="editSubjectDescriptionConfirm" extends="template">
+        <put-attribute name="body" value="/WEB-INF/views/jsp/subject/editSubjectDescriptionConfirm.jsp"/></definition>
+        <definition name="subjectEdited" extends="template">
+        <put-attribute name="body" value="/WEB-INF/views/jsp/subject/subjectEdited.jsp"/></definition>
+        <definition name="showSubjectDescription" extends="templateStatic">
+        <put-attribute name="body" value="/WEB-INF/views/jsp/subject/showSubjectDescription.jsp"/></definition>
+        
+        
+    <!-- TITLE DESCRIPTION FOR MESSAGE POST AND VIEW -->
+    <definition name="postMessage" extends="template">
+        <put-attribute name="body" value="/WEB-INF/views/jsp/message/postMessage.jsp"/></definition>
+        <definition name="confirmPostMessage" extends="template">
+        <put-attribute name="body" value="/WEB-INF/views/jsp/message/showMessage.jsp"/></definition>
+        <definition name="showMessage" extends="template">
+        <put-attribute name="body" value="/WEB-INF/views/jsp/message/showMessage.jsp"/></definition>
+        
+        
+     <!-- TITLE DEFINATIONS FOR EDIT STUDENT AND TEACHERS -->
+     <definition name="EditStudentOrTeacher" extends="template">
+     <put-attribute name="body" value="/WEB-INF/views/jsp/editStudentAndTeacher/EditStudentOrTeacher.jsp"/>
+     </definition>
+     <definition name="assignSubjectList" extends="template">
+     <put-attribute name="body" value="/WEB-INF/views/jsp/editStudentAndTeacher/aasignSubjectList.jsp"/>
+     </definition>
+     <definition name="assignSubjectListCommit" extends="template">
+     <put-attribute name="body" value="/WEB-INF/views/jsp/editStudentAndTeacher/assignSubjectListCommit.jsp"/>
+     </definition>
+     <definition name="assignSubjectListConfirm" extends="template">
+     <put-attribute name="body" value="/WEB-INF/views/jsp/editStudentAndTeacher/assignSubjectListConfirm.jsp"/>
+     </definition>
+     <definition name="editSubjectList" extends="template">
+     <put-attribute name="body" value="/WEB-INF/views/jsp/editStudentAndTeacher/editSubjectList.jsp"/>
+     </definition>
+         <!-- TITLE DEFINATIONS FOR RESOURCE MANAGEMENT -->
+         <definition name="uploadResources" extends="template">
+     <put-attribute name="body" value="/WEB-INF/views/jsp/resources/uploadResources.jsp"/>
+     </definition>
+     <definition name="downloadResource" extends="template">
+     <put-attribute name="body" value="/WEB-INF/views/jsp/resources/downloadResource.jsp"/>
+     </definition>
+     
+    <!-- TITLE DEFINATIONS FOR FACEBOOK API -->
+    <definition name="facebookAuth" extends="templateStatic">
+        <put-attribute name="body" value="/WEB-INF/views/jsp/static/facebookAuth.jsp"/>
+        </definition>
+        <definition name="faceBookNc" extends="templateStatic">
+        <put-attribute name="body" value="/WEB-INF/views/jsp/static/faceBookNc.jsp"/>
+        </definition>
+        <definition name="listFriend" extends="templateStatic">
+        <put-attribute name="body" value="/WEB-INF/views/jsp/static/listFriend.jsp"/>
+        </definition>
+    <!-- T -->
+    <!-- T -->
+    <!-- T -->
+      </tiles-definitions>
